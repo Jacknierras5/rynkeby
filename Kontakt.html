@@ -13,40 +13,23 @@
 
 
 
-    <title>Hello, world!</title>
+    <title>Kontakt - Rynkeby!</title>
   </head>
 
   <header>
+
      <!-- Navigation -->
-     <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Forside
-                <span class="sr-only">(current)</span>
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Historien.html">Historien</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Juice.html">Juice</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Kontakt.html">Kontakt</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="Webshop.html">Webshop</a>
-        </li>
-      </ul>
-    </div>
+      <div id="navbar">
+  <a href="index.html" id="logo">CompanyLogo</a>
+  <div id="navbar-right">
+   <a href="index.html">Forside</a>
+   <a href="Historien.html">Historien</a>
+   <a href="Juice.html">Juice</a>
+    <a class="active" href="Kontakt.html">Kontakt</a>
+    <a href="Webshop.html">Webshop</a>
   </div>
-</nav>
+</div>
+
   </header>
 
   <body>
@@ -57,18 +40,54 @@
    <br>
     <br>
     <br>
+     <br>
 
-     <section class="grid row">
-        <div class="col-md-4">123
-        </div><div class="col-md-4">123
-        </div><div class="col-md-4">123
-        </div><div class="col-md-4">123
-        </div><div class="col-md-4">123
-        </div><div class="col-md-4">123
-        </div><div class="col-md-4">123
-        </div><div class="col-md-4">123
-        </div><div class="col-md-4">123
-        </div>
+     <section class="kontaktgrid row">
+
+       <div class="col-md-12">
+           <h1>Kontakt</h1>
+       </div>
+
+       <div class="col-md-4">
+        <p> Rynkeby Foods A/S  <br>
+             Vestergade 30 <br>
+             DK-5750 Ringe</p>
+
+              <p>Tlf. +45 63 62 32 00 <br>
+Fax +45 63 62 32 01</p>
+
+
+               <h2>FORBRUGERKONTAKT</h2>
+               <p>Har du spørgsmål til Rynkebys produkter, er du velkommen til at sende os en mail på info@rynkeby.dk.
+
+               <br>
+               <br>
+               Vi opfordrer dig dog først til at læse FAQ, da du måske kan finde svaret på dit spørgsmål netop her.
+
+               <br>
+
+Der kan forventes op til 1 måneds responstid, da vi løbende modtager rigtig mange forbrugerhenvendelser, som vi alle behandler seriøst</p>
+
+
+       </div>
+
+
+
+
+
+
+
+
+       <div class="col-md-8">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2275.1131174431735!2d10.47104691591044!3d55.23375128041773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d25ef0f2d090b%3A0xc59c31225c918175!2sRynkeby%20Foods%20A%2FS!5e0!3m2!1sda!2sdk!4v1570564922223!5m2!1sda!2sdk" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+       </div>
+
+       <div class="col-md-12">
+          <h1>Ansøgning om sponsorat</h1>
+
+
+       </div>
+
       </section>
 
 
@@ -85,6 +104,57 @@
 
 
   </body>
+   <footer class="footer">
+        <nav class="navbar navbar-default navbar-custom">
+            <div class="container-fluid">
+                <div class="nav navbar-nav navbar-left">
+                    <ul class="footerleft">
+                        <li>
+                            <a href="">Tlf:</a>
+                        </li>
+                        <li>
+                            <a href="">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="text-center center-block">
+                   <ul class="footerright">
+                       <li>
+                       <a href="">face</a>
+                       </li>
+                       <li>
+                       <a href="">insta</a>
+                       </li>
+                       <li>
+                       <a href="">LinkIn</a>
+                       </li>
+
+                   </ul>
+                </div>
+
+
+            </div>
+
+        </nav>
+    </footer>
+
+    <script>
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-240px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
