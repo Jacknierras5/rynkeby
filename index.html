@@ -1,14 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 
 
@@ -40,8 +45,11 @@
     <div id="wrapper index" class="container-fluid">
 
         <!-- Gallery -->
-        <section class="bgallery row">
-            <div class="col-md-12">
+
+
+        <section class="bgallery row d-none d-md-flex">
+
+            <div class="col-md-12 fade-in-left">
 
 
                 <div id="carouselExampleIndicators" class="col-md-12 carousel slide" data-ride="carousel">
@@ -71,14 +79,21 @@
                     </a>
                 </div>
 
-
             </div>
+
         </section>
 
+        <section class="skilning row">
+
+            <div class="col-md-12 mobiltitel">
+                <h3 data-aos="fade-left">Quote</h3>
+            </div>
+
+        </section>
 
         <!-- Baground video -->
-        <section class="video row r">
-            <div class="col-md-12">
+        <section class="video row d-none d-md-flex">
+            <div data-aos="fade-left" class="col-md-12">
                 <img class="col-md-8" src="./imgs/raadhuspladsen04.jpg" alt="">
 
 
@@ -89,7 +104,7 @@
 
         <section class="infografik row">
             <div class="col-md-12">
-                <img class="col-md-8" src="./imgs/raadhuspladsen04.jpg" alt="">
+                <img data-aos="fade-left" class="col-md-8" src="./imgs/raadhuspladsen04.jpg" alt="">
 
             </div>
         </section>
@@ -97,21 +112,21 @@
 
         <section class="overskrift row">
             <div class="col-md-12">
-                <h1>Overskrift</h1>
+                <h1 data-aos="fade-left" class="alle">Overskrift</h1>
 
             </div>
         </section>
 
-        <div class="parallax col-md-12"></div>
+
 
         <div class="col-md-12">
-
+            <div data-aos="fade-left" class="parallax col-md-12"></div>
 
         </div>
 
         <section class="underskrift row">
             <div class="col-md-12">
-                <h3>quote</h3>
+                <h3 data-aos="fade-left">quote</h3>
 
             </div>
         </section>
@@ -119,29 +134,35 @@
 
 
         <section class="grid row">
-            <div class="col-md-4">123
+
+            <div class="col-md-12">
+
+                <div data-aos="fade-left" class='embedsocial-album' data-ref="e86bf8b43d9e8b13855774bafb834926bae939ec"></div>
+
+                <script>
+                    (function(d, s, id) {
+                        var js;
+                        if (d.getElementById(id)) {
+                            return;
+                        }
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "https://embedsocial.com/embedscript/ei.js";
+                        d.getElementsByTagName("head")[0].appendChild(js);
+                    }(document, "script", "EmbedSocialScript"));
+
+                </script>
+
+                <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+                <script src="jquery.instagramFeed.js"></script>
+
             </div>
-            <div class="col-md-4">123
-            </div>
-            <div class="col-md-4">123
-            </div>
-            <div class="col-md-4">123
-            </div>
-            <div class="col-md-4">123
-            </div>
-            <div class="col-md-4">123
-            </div>
-            <div class="col-md-4">123
-            </div>
-            <div class="col-md-4">123
-            </div>
-            <div class="col-md-4">123
-            </div>
+
+
+
+
+
         </section>
-
-
-
-
     </div>
 
 
@@ -152,67 +173,107 @@
 
 
 
-</body>
+    <footer class="footer-distributed">
 
+        <div class="footer-left">
 
+            <h3>Rynkeby!</h3>
 
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#">Blog</a>
+                ·
+                <a href="#">Pricing</a>
+                ·
+                <a href="#">About</a>
+                ·
+                <a href="#">Faq</a>
+                ·
+                <a href="#">Contact</a>
+            </p>
 
-<footer class="footer">
-    <nav class="navbar navbar-default navbar-custom">
-        <div class="container-fluid">
-            <div class="nav navbar-nav navbar-left">
-                <ul class="footerleft">
-                    <li>
-                        <a href="">Tlf:</a>
-                    </li>
-                    <li>
-                        <a href="">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="">Link 3</a>
-                    </li>
-                </ul>
+            <p class="footer-company-name">Rynkyby! &copy; 2019</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>21 Revolution Street</span> Delhi, India</p>
             </div>
 
-            <div class="text-center center-block">
-                <ul class="footerright">
-                    <li>
-                        <a href="">face</a>
-                    </li>
-                    <li>
-                        <a href="">insta</a>
-                    </li>
-                    <li>
-                        <a href="">LinkIn</a>
-                    </li>
-
-                </ul>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 555 123456</p>
             </div>
 
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">Info@rynkeby.dk</a></p>
+            </div>
 
         </div>
 
-    </nav>
-</footer>
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Om Firmaet</span>
+                Juice er 100% ren frugt- eller grøntsagssaft og er aldrig tilsat sukker eller nogen former for tilsætningsstoffer.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
 
 
 
-<script>
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-240px";
+
+
+
+    <script>
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-240px";
+            }
+            prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
-    }
-</script>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></html>
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
