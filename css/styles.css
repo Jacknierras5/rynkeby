@@ -44,6 +44,11 @@ h2 {}
 
 p {}
 
+.loggo {
+    width: 100px;
+    height: auto;
+
+}
 
 
 /* - Navbar */
